@@ -1,0 +1,95 @@
+# Student Performance Analysis Using Python and EDA
+
+**Level:** Beginner | **Type:** College mini project | **Focus:** Python + Exploratory Data Analysis (no machine learning)
+
+## 1. Problem statement
+This project explores how study-time category, absences, previous grades, and past failures relate to students' final mathematics grades. It uses descriptive statistics and charts to discover patterns in a public educational dataset.
+
+## 2. Dataset
+Use the UCI Student Performance dataset:
+https://archive.ics.uci.edu/dataset/320/student+performance
+
+Download the dataset files and copy **`student-mat.csv`** into this project's `data/` folder. The file uses semicolons as separators, which the script handles automatically. Do not rename it.
+
+## 3. Project structure
+```text
+student_performance_eda_project/
+├── data/
+│   └── student-mat.csv          # Download separately from UCI
+├── outputs/                     # Charts and summary tables appear here
+├── src/
+│   └── analyze_students.py      # Main EDA implementation
+├── requirements.txt
+└── README.md
+```
+
+## 4. Setup and run
+
+### Windows
+1. Install Python 3.10 or newer from https://www.python.org/downloads/.
+2. Open Command Prompt or the terminal in this folder.
+3. Create a virtual environment (recommended):
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+4. Install libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. Download `student-mat.csv` from UCI and place it in `data/`.
+6. Run:
+   ```bash
+   python src/analyze_students.py
+   ```
+
+### macOS / Linux
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python src/analyze_students.py
+```
+
+## 5. What the code does
+- Loads the CSV and displays its shape and first five records.
+- Checks data types, missing values, duplicate rows, and descriptive statistics.
+- Removes exact duplicate rows if any exist.
+- Creates five visualizations:
+  1. Final grade distribution
+  2. Average final grade by study-time category
+  3. Absences versus final grade
+  4. Correlation heatmap
+  5. Average final grade by past failures
+- Exports summary tables as CSV files.
+
+## 6. Research questions
+1. What does the distribution of final grades look like?
+2. How does average final grade vary across study-time categories?
+3. Is there an observable relationship between absences and final grades?
+4. Which selected variables have stronger positive or negative correlations with final grade?
+5. How does average final grade vary by the number of past failures?
+
+## 7. How to write your findings
+Run the program first, then use the generated charts and printed summary values to answer each research question. Do **not** invent results before running the analysis. Correlation and group averages show associations, not proof that one factor causes a grade outcome.
+
+## 8. Suggested report structure
+1. Title page
+2. Abstract (short summary of the project)
+3. Introduction and problem statement
+4. Objectives
+5. Dataset description and source
+6. Tools and libraries
+7. Methodology (loading, checking, cleaning, EDA)
+8. Results: include all five charts and explain each one
+9. Conclusion and limitations
+10. References
+
+## 9. Limitations
+- This dataset represents students from two Portuguese schools; findings may not generalize to all students.
+- Study time is a category rather than exact hours.
+- The analysis is observational and cannot establish causation.
+- Some variables are self-reported.
+
+## 10. Reference
+Cortez, P. & Silva, A. (2008). *Using Data Mining to Predict Secondary School Student Performance*. Dataset hosted by the UCI Machine Learning Repository: https://archive.ics.uci.edu/dataset/320/student+performance
