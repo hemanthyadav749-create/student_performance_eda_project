@@ -1,0 +1,47 @@
+# College Mini Project Report Template
+
+## Title
+Student Performance Analysis Using Python and Exploratory Data Analysis
+
+## Abstract
+This project analyzes a public student performance dataset using Python. The analysis includes data inspection, data-quality checks, descriptive statistics, and visualizations. The aim is to explore associations between study-time category, absences, past failures, previous grades, and final mathematics grade.
+
+## 1. Introduction
+Explain why understanding academic performance patterns may help educators and students.
+
+## 2. Problem Statement
+State the problem in your own words and describe the questions your analysis aims to answer.
+
+## 3. Objectives
+- Inspect and summarize student data.
+- Check for missing values and duplicate records.
+- Visualize grade distributions and relationships.
+- Interpret findings carefully without claiming causation.
+
+## 4. Dataset Description
+- Source: UCI Machine Learning Repository
+- File: student-mat.csv
+- Target/primary outcome for analysis: G3 (final mathematics grade)
+- Include the row and column counts printed by your script.
+
+## 5. Tools Used
+Python, Pandas, Matplotlib, Seaborn.
+
+## 6. Methodology
+Describe dataset loading, quality checks, descriptive statistics, and each visualization.
+
+## 7. Results and Discussion
+Insert the five PNG charts from the outputs/ folder. Under each chart, write:
+- What the chart shows
+- The main pattern you observed
+- Any caveat or limitation
+
+## 8. Conclusion
+Summarize the findings you actually observed after running the script. Do not assume that study time or absences cause the grade differences.
+
+## 9. Limitations
+Discuss the dataset's limited geographic scope, observational nature, and self-reported information.
+
+## 10. Reference
+Cortez, P. & Silva, A. (2008). Using Data Mining to Predict Secondary School Student Performance. UCI Machine Learning Repository.
+https://archive.ics.uci.edu/dataset/320/student+performance
